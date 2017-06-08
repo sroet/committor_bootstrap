@@ -1,0 +1,6 @@
+*.nc
+*.egg-info
+*.swp
+*.pyc
+*.ipynb_checkpoints
+version.py
