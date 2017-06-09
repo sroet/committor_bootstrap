@@ -49,7 +49,7 @@ class CommittorBootstrap(PathSimulator):
         self.results = {i: {j: [] for j in states if j != i}
                         for i in states}
 
-        self.hash_function = paths.ShootingPointAnalysis.hash_function
+        self.hash_function = paths.SnapshotByCoordinateDict().hash_function
     def next_frame(self, pBs, snap_min=None, snap_frame=None, snap_max=None):
 
         if snap_min is None:
