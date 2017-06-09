@@ -40,7 +40,7 @@ class CommittorBootstrap(PathSimulator):
             if state(self.trajectory[-1]):
                 self.final_state = state
         if initial_guess is None:
-            self.snap_frame = len(trajectory)/2
+            self.snap_frame = len(self.trajectory)/2
         else:
             self.snap_frame = initial_guess
         self.snap_min = 0
